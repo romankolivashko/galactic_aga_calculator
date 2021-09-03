@@ -28,10 +28,12 @@ export default class calcAge {
     let ageOnVenus = 0;
     ageOnVenus = ageOnEarth / 0.62;
     return parseInt(ageOnVenus).toFixed();
-    
   }
 
-  getMarsAge() {
+  getMarsAge(ageOnEarth) {
+    let ageOnMars = 0;
+    ageOnMars = ageOnEarth / 1.88;
+    return parseInt(ageOnMars).toFixed();
     
   }
 
