@@ -43,8 +43,10 @@ export default class calcAge {
     return parseInt(ageOnJupiter).toFixed();
   }
 
-  getUserYearsLeft() {
-  
+  getUserYearsLeft(lifeExpectancy, ageOnEarth) {
+    let yearsLeft = 0;
+    yearsLeft = lifeExpectancy - ageOnEarth;
+    return yearsLeft;
   }
   
 

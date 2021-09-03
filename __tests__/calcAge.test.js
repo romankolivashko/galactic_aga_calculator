@@ -35,9 +35,9 @@ describe('calcAge', () => {
   test('This should return human age in Jupiter years', () => {
     expect(age.getJupiterAge(65)).toEqual("5");
   });
-  
+
   test('This should return years expected for user to live', () => {
-    expect(age.getUserYearsLeft(65)).toEqual("5");
+    expect(age.getUserYearsLeft(85, 65)).toEqual(20);
   });
 
 
