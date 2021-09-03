@@ -34,7 +34,9 @@ export default class calcAge {
     let ageOnMars = 0;
     ageOnMars = ageOnEarth / 1.88;
     return parseInt(ageOnMars).toFixed();
-    
+  }
+
+  getJupiterAge() {
   }
 
 }

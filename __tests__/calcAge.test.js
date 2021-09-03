@@ -31,5 +31,9 @@ describe('calcAge', () => {
     expect(age.getMarsAge(65)).toEqual("34");
   });
 
+  test('This should return human age in Jupiter years', () => {
+    expect(age.getJupiterAge(65)).toEqual("5");
+  });
+
 
 });
