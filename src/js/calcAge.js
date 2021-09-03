@@ -36,7 +36,10 @@ export default class calcAge {
     return parseInt(ageOnMars).toFixed();
   }
 
-  getJupiterAge() {
+  getJupiterAge(ageOnEarth) {
+    let ageOnJupiter = 0;
+    ageOnJupiter = ageOnEarth / 11.86;
+    return parseInt(ageOnJupiter).toFixed();
   }
 
 }
