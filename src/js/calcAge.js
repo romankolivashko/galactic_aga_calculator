@@ -5,5 +5,9 @@ export default class calcAge {
     this.dob = dob;
   }
 
+  getEarthAge() {
+
+  }
+
 }
 
