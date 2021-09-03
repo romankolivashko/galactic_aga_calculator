@@ -36,9 +36,20 @@ describe('calcAge', () => {
     expect(age.getJupiterAge(65)).toEqual("5");
   });
 
-  test('This should return years expected for user to live', () => {
-    expect(age.getUserYearsLeft(85, 65)).toEqual(20);
+  test('This should return str message with number of years expected to live', () => {
+    expect(age.getUserYearsLeft(85, 65)).toEqual("You have about 20 years left to live.");
   });
 
+  test('This should return str message with number of years surpassing life expectancy', () => {
+    expect(age.getUserYearsLeft(65, 85)).toEqual("You lived 20 years past life expectancy.");
+  });
+
+  test('This should return str message with 0 years expected to live', () => {
+    expect(age.getUserYearsLeft(85, 85)).toEqual("You have about 0 years left to live.");
+  });
+
+  test('This should return false if none of the branching meets outlined conditions', () => {
+    expect(age.getUserYearsLeft("falseType")).toBeFalsy();
+  });
 
 });
