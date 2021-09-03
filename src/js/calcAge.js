@@ -5,9 +5,12 @@ export default class calcAge {
     this.dob = dob;
   }
 
-  getEarthAge() {
-
+  getYearFromDob(dob){
+    let inputYear = 0;
+    let date = new Date(dob);
+    return inputYear = date.getFullYear();
   }
+  
 
 }
 

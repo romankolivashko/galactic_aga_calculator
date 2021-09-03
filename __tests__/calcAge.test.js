@@ -11,8 +11,9 @@ describe('calcAge', () => {
     expect(age.dob).toBe('1956-9-1');
   });
 
-  test('This should return current age on Earth', () => {
-    expect(age.getEarthAge).toEqual(65);
+  test('This should return year value with dob provided', () => {
+    expect(age.getYearFromDob('1956-9-1')).toEqual(1956);
   });
+
 
 });
