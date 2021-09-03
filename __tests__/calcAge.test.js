@@ -24,7 +24,7 @@ describe('calcAge', () => {
   });
 
   test('This should return human age in Venus years', () => {
-    expect(age.getVenusAge(65)).toEqual("105");
+    expect(age.getVenusAge(65)).toEqual("104");
   });
 
 
