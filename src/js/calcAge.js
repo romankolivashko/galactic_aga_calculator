@@ -31,5 +31,9 @@ export default class calcAge {
     
   }
 
+  getMarsAge() {
+    
+  }
+
 }
 

@@ -27,5 +27,9 @@ describe('calcAge', () => {
     expect(age.getVenusAge(65)).toEqual("104");
   });
 
+  test('This should return human age in Mars years', () => {
+    expect(age.getMarsAge(65)).toEqual("34");
+  });
+
 
 });
