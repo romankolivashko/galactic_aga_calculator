@@ -1,8 +1,9 @@
 //import { arguments } from "file-loader";
 
 export default class calcAge {
-  constructor(dob) {
+  constructor(dob, lifeExpectancy) {
     this.dob = dob;
+    this.lifeExpectancy = lifeExpectancy;
   }
 
   getYearFromDob(dob){
@@ -41,6 +42,11 @@ export default class calcAge {
     ageOnJupiter = ageOnEarth / 11.86;
     return parseInt(ageOnJupiter).toFixed();
   }
+
+  getUserYearsLeft() {
+  
+  }
+  
 
 }
 
