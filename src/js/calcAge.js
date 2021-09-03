@@ -18,8 +18,13 @@ export default class calcAge {
     return ageOnEarth = currYear - inputYear;
   }
 
-  getMercuryAge() {
+  getMercuryAge(ageOnEarth) {
+    let ageOnMercury;
+    return ageOnMercury = ageOnEarth / 0.24;
+  }
 
+  getVenusAge() {
+    
   }
 
 }
