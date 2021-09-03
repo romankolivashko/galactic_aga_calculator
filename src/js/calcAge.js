@@ -1,22 +1,23 @@
 //import { arguments } from "file-loader";
 
 export default class calcAge {
-  constructor(dob, lifeExpectancy) {
+  constructor(dob) {
     this.dob = dob;
-    //.lifeExpectancy = lifeExpectancy;
   }
 
   getYearFromDob(dob){
     let inputYear = 0;
     let date = new Date(dob);
-    return inputYear = date.getFullYear();
+    inputYear = date.getFullYear();
+    return inputYear;
   }
   
   getEarthAge(inputYear) {
     let ageOnEarth;
     let year = new Date();
     let currYear = year.getFullYear();
-    return ageOnEarth = currYear - inputYear;
+    ageOnEarth = currYear - inputYear;
+    return ageOnEarth;
   }
 
   getMercuryAge(ageOnEarth) {
@@ -48,15 +49,15 @@ export default class calcAge {
 
     if (ageOnEarth > lifeExpectancy) {
       let surpAge = ageOnEarth - lifeExpectancy;
-      return `You lived ${surpAge} years past life expectancy.`
+      return `You lived ${surpAge} years past life expectancy.`;
     } else if (ageOnEarth < lifeExpectancy) {
       yearsLeft = lifeExpectancy - ageOnEarth;
       return `You have about ${yearsLeft} years left to live.`;
     } else if (ageOnEarth === lifeExpectancy) {
       return `You have about ${yearsLeft} years left to live.`;
-   } else {
-     return false;
-   }
+    } else {
+      return false;
+    }
   }
 
 }

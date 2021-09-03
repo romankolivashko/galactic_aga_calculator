@@ -2,26 +2,32 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Triangle from './js/triangle.js';
-import Rectangle from './js/rectangle.js';
+import CalcAge from './js/calcAge.js';
 
 $(document).ready(function() {
-  $('#triangle-checker-form').submit(function(event) {
+  $('#calculate-age-form').submit(function(event) {
     event.preventDefault();
-    const length1 = parseInt($('#length1').val());
-    const length2 = parseInt($('#length2').val());
-    const length3 = parseInt($('#length3').val());
-    const triangle = new Triangle(length1, length2, length3);
-    const response = triangle.checkType();
-    $('#response').append(`<p>${response}</p>`);
+    const inputYear = parseInt($('#age').val());
+    const ageOut = new CalcAge(inputYear);
+    const earth = inputYear;
+    const mercury = ageOut.getMercuryAge(inputYear);
+    const venus = ageOut.getVenusAge(inputYear);
+    const mars = ageOut.getMarsAge(inputYear);
+    const jupiter = ageOut.getJupiterAge(inputYear);
+    $('#earth').append(`Years lived on Earth: ${earth}`);
+    $('#mercury').append(`Years lived on Mercury: ${mercury}`);
+    $('#venus').append(`Years lived on Venus: ${venus}`);
+    $('#mars').append(`Years lived on Mars: ${mars}`);
+    $('#jupiter').append(`Years lived on Jupiter: ${jupiter}`);
   });
 
-  $('#rectangle-area-form').submit(function(event) {
+  $('#years-left-form').submit(function(event) {
     event.preventDefault();
-    const length1 = parseInt($('#rect-length1').val());
-    const length2 = parseInt($('#rect-length2').val());
-    const rectangle = new Rectangle(length1, length2);
-    const response = rectangle.getArea();
-    $('#response2').append(`<p> The area of the rectangle is ${response}.</p>`);
+    const expectLifeYears = parseInt($('#age').val());
+    const yearsLeftOut = new CalcAge(expectLifeYears);
+    const lifeExpectancy = parseInt($('#life-left').val());
+    const yearsLeft = yearsLeftOut.getUserYearsLeft(lifeExpectancy, expectLifeYears);
+    console.log(yearsLeft);
+    $('#years').append(`${yearsLeft}`);
   });
 });
