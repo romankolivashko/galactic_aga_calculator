@@ -3,7 +3,7 @@
 export default class calcAge {
   constructor(dob, lifeExpectancy) {
     this.dob = dob;
-    this.lifeExpectancy = lifeExpectancy;
+    //.lifeExpectancy = lifeExpectancy;
   }
 
   getYearFromDob(dob){
@@ -45,10 +45,19 @@ export default class calcAge {
 
   getUserYearsLeft(lifeExpectancy, ageOnEarth) {
     let yearsLeft = 0;
-    yearsLeft = lifeExpectancy - ageOnEarth;
-    return yearsLeft;
+
+    if (ageOnEarth > lifeExpectancy) {
+      let surpAge = ageOnEarth - lifeExpectancy;
+      return `You lived ${surpAge} years past life expectancy.`
+    } else if (ageOnEarth < lifeExpectancy) {
+      yearsLeft = lifeExpectancy - ageOnEarth;
+      return `You have about ${yearsLeft} years left to live.`;
+    } else if (ageOnEarth === lifeExpectancy) {
+      return `You have about ${yearsLeft} years left to live.`;
+   } else {
+     return false;
+   }
   }
-  
 
 }
 
