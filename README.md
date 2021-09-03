@@ -15,7 +15,16 @@
 * _Linter_
 
 ## Description
+A solar year lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. This application determines a user's age based on a planet's solar years.
 
+The business logic of your application should take a person's age in years and create a class that does the following:
+
+* Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
+* Returns their age in Venus years. (A Venus year is .62 Earth years.)
+* Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
+* Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
+* Determines how many years a user has left to live on each planet… (yikes!) To do this, the application will have to calculate the user's life expectancy. 
+* If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy.
 ## Setup/Installation Requirements
 
 1. Click on "Code" button at top of GitHub repository. 
