@@ -23,9 +23,9 @@ describe('calcAge', () => {
     expect(age.getMercuryAge(65)).toEqual("270");
   });
 
-  // test('This should return human age in Venus years', () => {
-  //   expect(age.getVenusAge(65)).toEqual("105");
-  // });
+  test('This should return human age in Venus years', () => {
+    expect(age.getVenusAge(65)).toEqual("105");
+  });
 
 
 });
