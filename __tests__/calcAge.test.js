@@ -19,9 +19,9 @@ describe('calcAge', () => {
     expect(age.getEarthAge(1956)).toEqual(65);
   });
 
-  // test('This should return human age on Mercury', () => {
-  //   expect(age.getMercuryAge(65)).toEqual(15.6);
- // });
+  test('This should return human age on Mercury', () => {
+    expect(age.getMercuryAge(65)).toEqual(15.6);
+  });
 
 
 });

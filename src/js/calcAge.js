@@ -12,14 +12,14 @@ export default class calcAge {
   }
   
   getEarthAge(inputYear) {
-    let earthAge;
+    let ageOnEarth;
     let year = new Date();
     let currYear = year.getFullYear();
-    return earthAge = currYear - inputYear;
+    return ageOnEarth = currYear - inputYear;
   }
 
   getMercuryAge() {
-    
+
   }
 
 }
