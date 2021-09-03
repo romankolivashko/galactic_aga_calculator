@@ -15,5 +15,9 @@ describe('calcAge', () => {
     expect(age.getYearFromDob('1956-9-1')).toEqual(1956);
   });
 
+  test('This should return earth age numeric value', () => {
+    expect(age.getEartAge(1956)).toEqual(65);
+  });
+
 
 });

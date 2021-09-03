@@ -11,6 +11,9 @@ export default class calcAge {
     return inputYear = date.getFullYear();
   }
   
+  getEartAge() {
+
+  }
 
 }
 
