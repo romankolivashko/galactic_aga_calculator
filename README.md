@@ -31,13 +31,14 @@ The business logic of your application should take a person's age in years and c
 2. Clone the repository: $ git clone https://github.com/romankolivashko/galactic_aga_calculator.git
 3. Navigate to the galactic_age_calculator/ directory on your computer
 4. To start a development server and view the project in the browser:
-   * Navigate to my-project/ in your command line
+   * Navigate to galactic_age_calculator/ in your command line
    * Run the command `npm install` to install dependencies
    * Optionally, run the commmand `npm run build` to make a bundle of the files
    * Finally, run the command `npm run start` to start a development server
  
 To run tests, navigate to my-project/ in your terminal and run the command `npm run test`
-
+## How to access the app from the web
+* _Follow the link [here](https://elated-bell-30d3d7.netlify.app/)_ 
 ## Known Bugs
 
 * _None so far_
