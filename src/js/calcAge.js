@@ -55,7 +55,8 @@ export default class calcAge {
     } else if (ageOnEarth === lifeExpectancy) {
       return `You have about ${yearsLeft} years left to live.`;
     } else {
-      return false;
+      false;
+      return "";
     }
   }
 

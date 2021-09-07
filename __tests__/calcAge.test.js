@@ -52,4 +52,7 @@ describe('calcAge', () => {
     expect(age.getUserYearsLeft("falseType")).toBeFalsy();
   });
 
+  test('This should return str if conditional returns false', () => {
+    expect(age.getUserYearsLeft(false)).toBe("");
+  });
 });
