@@ -48,11 +48,11 @@ describe('calcAge', () => {
     expect(age.getUserYearsLeft(85, 85)).toEqual("You have about 0 years left to live.");
   });
 
-  test('This should return false if none of the branching meets outlined conditions', () => {
-    expect(age.getUserYearsLeft("falseType")).toBeFalsy();
-  });
+  // test('This should return false if none of the branching meets outlined conditions', () => {
+  //   expect(age.getUserYearsLeft(false)).toBeFalsy();
+  // });
 
   test('This should return str if conditional returns false', () => {
-    expect(age.getUserYearsLeft(false)).toBe("");
+    expect(age.getUserYearsLeft(false)).toEqual("Select one of the options from the list.");
   });
 });

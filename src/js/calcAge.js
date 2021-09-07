@@ -56,7 +56,7 @@ export default class calcAge {
       return `You have about ${yearsLeft} years left to live.`;
     } else {
       false;
-      return "";
+      return "Select one of the options from the list.";
     }
   }
 
