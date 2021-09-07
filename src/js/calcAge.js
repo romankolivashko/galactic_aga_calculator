@@ -46,7 +46,6 @@ export default class calcAge {
 
   getUserYearsLeft(lifeExpectancy, ageOnEarth) {
     let yearsLeft = 0;
-
     if (ageOnEarth > lifeExpectancy) {
       let surpAge = ageOnEarth - lifeExpectancy;
       return `You lived ${surpAge} years past life expectancy.`;

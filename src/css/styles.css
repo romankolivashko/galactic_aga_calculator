@@ -1,3 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
 body {
-  background-color: lightblue;
+  background: url("../../assets/images/nightsky.jpg") center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 1%;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(250, 229, 170);
+}
+
+span {
+  position: fixed;
+  top: 0%;
+  left: 80%;
+  width: 3px;
+  height: 3px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow:0 0 0 4px rgba(255, 255, 255, 0.1),
+  0 0 0 8px rgba(255,255,255,0.1),
+  0 0 20px rgba(255,255,255,1);
+  animation: animate 1s linear infinite;
+}
+
+span::before
+{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes animate
+{
+  0%
+  { 
+    transform: rotate(306deg) translateX(0);
+    opacity: 0.7;
+  }
+  70%
+  {
+    opacity: 0.4;
+  }
+  100%
+  { 
+    transform: rotate(306deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+span:nth-child(1)
+{
+  top: 0;
+  right: 80px;
+  left: initial;
+  animation-delay: 3s;
+  animation-duration: 5.5s;
+  opacity: 0.8;
+}
+
+span:nth-child(2)
+{
+  top: 0px;
+  right: 600px;
+  left: initial;
+  animation-delay: 7s;
+  animation-duration: 4s;
+}
+
+span:nth-child(3)
+{
+  top: 0px;
+  right: 1500px;
+  left: initial;
+  animation-delay: 5s;
+  animation-duration: 8.5s;
+}
+
+.jumbotron {
+  background-image: url("../../assets/images/bg-standout.jpg");
+  z-index:2;
+  background-size: cover;
+  box-shadow: 0 8px 12px 0 rgba(2, 8, 10, 0.472), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3em;
+  opacity: 0.8;
+  border: 1px rgba(2, 8, 10, 0.472);
+}
+
+.container {
+  max-width: 700px;
+  margin-top: 5em;
+  z-index:1;
+}
+
+.heading {
+  margin-bottom: 3rem;
+}
+
+.first-form {
+  margin-top: 1.2em;
+  margin-bottom: 3rem;
+}
+
+#years {
+  padding-top: 3em;
+}
+
+.second-form {
+   margin-top: 1.2em;
+}
+
+/* .input-group {
+  display: none;
+} */
+
+
+#years-pl {
+  margin-top: 3rem;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(231, 192, 192, 0.637);
+}
+
+.custom-select{
+  max-width: 360px;
 }

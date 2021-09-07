@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Galactic Age alculator</title>
+  <link
+    href="https://www.dafontfree.net/embed/Z2lsbC1zYW5zLXVsdHJhLWJvbGQtcmVndWxhciZkYXRhLzI1L2cvMTI3MjQ3L0dpbGxTYW5zVWx0cmFCb2xkLnR0Zg"
+    rel="stylesheet" type="text/css" />
+  <title>Galactic Age Calculator</title>
 </head>
+
 <body>
-  <img src="../assets/images/galaxy.jpg" alt="stars, nothing but stars">
-  <h3>Please enter your age</h3>
-  <form id="calculate-age-form">
-    <label for="age">Age:</label>
-    <input id="age" type="year" require>
-    <button type="submit">Submit</button>
-  </form>
-
-  <p id="earth"></p>
-  <p id="mercury"></p>
-  <p id="venus"></p>
-  <p id="mars"></p>
-  <p id="jupiter"></p>
-
-  <form id="years-left-form">
-    <label for="life-left">Life expectancy:</label>
-    <input id="life-left" type="number">
-    <button type="submit">Submit</button>
-  </form>
-
-  <p id="years"></p>
+  <!-- Animation -->
+  <section>
+    <span></span>
+    <span></span>
+    <span></span>
+  </section>
+  <!-- End of animation -->
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="heading">
+            <h1>Galactic Age Calculator</h1>
+            <hr>
+          </div>
+          <h3>Please enter your age:</h3>
+          <div class="first-form">
+            <form id="calculate-age-form">
+              <input id="age" type="year" required>
+              <button type="submit" class="btn btn-outline-light">Submit</button>
+            </form>
+            <div id="years-pl">
+              <p id="earth"></p>
+              <p id="mercury"></p>
+              <p id="venus"></p>
+              <p id="mars"></p>
+              <p id="jupiter"></p>
+            </div>
+          </div>
+          <h3>Life expectancy in your area?</h3>
+          <form id="years-left-form">
+          <div class="second-form">
+            <div class="input-group">
+              <select class="custom-select" id="inputGroupSelect04">
+                <label for="life-left">Life expectancy:</label>
+                <option selected>Choose...</option>
+                <option value="65">Less than 65</option>
+                <option value="75">Less than 75</option>
+                <option value="85">Less than 85</option>
+              </select>
+              <div class="input-group-append">
+                <button class="btn btn-outline-light" type="submit">Submit</button>
+              </div>
+            </form>
+            </div>
+            <p id="years"></p>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
+
 </html>
