@@ -1,5 +1,30 @@
 # Super Galactic Age Calculator
 
+<html>
+<!-- Project Shields -->
+    <p align="left">
+        <a href="https://github.com/romankolivashko/galactic_age_calculator">
+            <img src="https://img.shields.io/github/repo-size/romankolivashko/galactic_age_calculator?style=plastic">
+        </a>
+		  ¨
+        <a href="https://github.com/romankolivashko/galactic_age_calculator/commits/main">
+            <img src="https://img.shields.io/github/last-commit/romankolivashko/galactic_age_calculator?color=yellow&style=plastic">
+        </a>
+        ¨
+        <a href="https://github.com/romankolivashko/galactic_age_calculator/stargazers">
+            <img src="https://img.shields.io/github/stars/romankolivashko/galactic_age_calculator?color=yellow&style=plastic">
+        </a>
+        ¨
+        <a href="https://github.com/romankolivashko/galactic_age_calculator/issues">
+           <img src="https://img.shields.io/github/issues/romankolivashko/galactic_age_calculator?color=yellow&style=plastic">
+        </a>
+        ¨
+        <a href="https://linkedin.com/in/rkolivashko">
+            <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=plastic&logo=linkedin&colorB=2867B2">
+        </a>
+    </p> 
+</html>
+
 #### This app determines user's age based on a planet's solar years.
 
 #### By Roman Kolivashko
