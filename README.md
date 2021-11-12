@@ -37,6 +37,10 @@ The business logic of your application should take a person's age in years and c
    * Finally, run the command `npm run start` to start a development server
  
 To run tests, navigate to my-project/ in your terminal and run the command `npm run test`
+
+## Quick look
+![](./assets/images/age_calc.gif)
+
 ## How to access the app from the web
 * _Follow the link [here](https://elated-bell-30d3d7.netlify.app/)_ 
 ## Known Bugs
