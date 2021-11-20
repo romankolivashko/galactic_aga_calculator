@@ -56,7 +56,7 @@ The business logic of your application should take a person's age in years and c
 ## Setup/Installation Requirements
 
 1. Click on "Code" button at top of GitHub repository. 
-2. Clone the repository: $ git clone https://github.com/romankolivashko/galactic_aga_calculator.git
+2. Clone the repository: `$ git clone https://github.com/romankolivashko/galactic_aga_calculator.git`
 3. Navigate to the galactic_age_calculator/ directory on your computer
 4. To start a development server and view the project in the browser:
    * Navigate to galactic_age_calculator/ in your command line
